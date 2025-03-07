@@ -3,8 +3,9 @@ package app.view;
 import java.util.Scanner;
 
 public class AppView {
-    public void getDisplayInfo(String output){
-        System.out.println(output);
+
+    public <T>void getDisplayInfo(T output){
+        System.out.print(output);
     }
     public String getInputText(){
         Scanner scanner = new Scanner(System.in);
